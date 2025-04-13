@@ -23,7 +23,9 @@ function validateEnvironment() {
         process.exit(1);
     }
 }
+
 validateEnvironment();
+
 const WALLET_DATA_FILE = "wallet_data.txt";
 async function initializeAgent() {
     try {
