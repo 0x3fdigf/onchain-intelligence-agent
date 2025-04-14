@@ -17,6 +17,9 @@ import { fetchPrice } from '@/tools/jupiter/fetch_price';
 import type { Portfolio } from '@/types/portfolio';
 import Groq from "groq-sdk";
 
+interface AIService {
+  defaultModel: String
+}
 
 interface AIServiceConfig {
   groqApiKey: string;
